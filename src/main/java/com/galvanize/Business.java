@@ -3,13 +3,13 @@ import java.util.ArrayList;
 
 public class Business implements Addressable {
 	private String name;
-	ArrayList<?> addresses = new ArrayList();
+	private ArrayList<Address> addresses = new ArrayList<Address>();
 	
-	void addAddress(String address){
-		addresses.add(address);
+	public void addAddress(String address){
+		addresses.add(new Address);
 	}
 	
-	public String getAddresses(){
+	public String[] getAddresses(){
 		return addresses;
 	}
 	public String getName(){

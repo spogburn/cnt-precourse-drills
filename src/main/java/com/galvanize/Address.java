@@ -32,10 +32,14 @@ public class Address {
 		zip = newZip;
 	}
 	
-	Address(String _street, String _city, String _state, String _zip){
+	public Address(String _street, String _city, String _state, String _zip){
 		street = _street;
 		city = _city;
 		state = _state;
 		zip = _zip;
+	}
+	@Override public String toString(){
+		StringBuilder result = new StringBuilder();
+		result.append(street + ", " +  city + ", " + "state" + " " + zip );
 	}
 }
