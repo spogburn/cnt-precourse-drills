@@ -1,10 +1,9 @@
 package com.galvanize;
 import java.util.ArrayList;
 
-
 public class Business implements Addressable {
 	private String name;
-	List addresses = new ArrayList();
+	ArrayList<?> addresses = new ArrayList();
 	
 	void addAddress(String address){
 		addresses.add(address);

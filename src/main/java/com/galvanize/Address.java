@@ -38,11 +38,4 @@ public class Address {
 		state = _state;
 		zip = _zip;
 	}
-	
-	public interface Addressable {
-
-		public void getAddresses();
-		
-		public void addAddress(String address);
-	}
 }
